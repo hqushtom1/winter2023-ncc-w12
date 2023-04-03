@@ -1,17 +1,13 @@
-
 name: Build and Deploy
 on: 
   push:
-    braches:
+    branches:
       - main
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Dep
-      run: npm install
-
+      - name: Install Dependencies
+        run: npm install
       - name: Build
-      run: npm run build
-
-
+        run: npm run build
