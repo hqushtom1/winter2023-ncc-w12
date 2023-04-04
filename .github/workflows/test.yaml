@@ -18,3 +18,20 @@ jobs:
       - name: Run Cypress Tests
         run: npm run build
 
+run-tests2:
+    name: Lint and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install packages
+        run: npm ci
+
+      - name: Run ESlint
+        run: npm run lint
+
+      - name: Run Cypress Tests
+        run: npm run build
+
