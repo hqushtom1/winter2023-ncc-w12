@@ -16,6 +16,5 @@ jobs:
         run: npm run lint
 
       - name: Run Cypress Tests
-        build: npm run build
-        start: npm start
+        run: npm run build
 
