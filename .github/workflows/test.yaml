@@ -18,8 +18,8 @@ jobs:
       - name: Run Cypress Tests
         run: npm run build
 
-run-tests2:
-    name: Lint and Test
+  run-tests2:
+    name: Lint and Test2
     runs-on: ubuntu-latest
 
     steps:
